@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() {
-	double x = 2.;
+void mysqrt(double x) {
 	double s = 1.;
 	double tol = 1.0e-14;
 	int maxiter = 100;
@@ -19,6 +18,11 @@ int main() {
 	printf("After iteration %d, s = %20.15f\n", i, s);
 	printf("mysqrt(%f) = %20.15f\n", x, s);
 
+}
+
+int main() {
+	double x = 2.;
+	mysqrt(x);
 	return 0;
 
 }
